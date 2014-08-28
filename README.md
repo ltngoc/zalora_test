@@ -6,6 +6,7 @@
 			A schema can include several tables and other stuffs of a database such as index, etc.
 		+ A table is the basic data storage unit. Data is stored in rows and columns.
 		+ A view is the result set of a stored query on the data,  which users of the database can query as a normal table. 			This pre-established query command is kept in the database dictionary.
+	
 	b. However a view is different from and more advantageous than a table in the following ways:
 		+ a view can be a subset of an underlying table. Thus, it helps to limit the exposure of the underlying table to 					outer world. For example,  a given user may be permitted to query the view, while denied access to the rest of the 			base table.
 		+ a view can join and simplify multiple tables into a single virtual table.
@@ -13,6 +14,7 @@
 		+ a view takes very little space to store since the database contains only the definition of a view, not a copy of 				all the data that it presents
 
 	c. See `report.sql`
+	
 	d. See `report.sql`
 3.  Bash scripting
 
