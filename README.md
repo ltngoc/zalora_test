@@ -1,5 +1,7 @@
 1. See `sol_1.py`
+
 2. SQL
+	
 	a. Relationship between database, schema, table and view in SQL	languages in general
 		+ A database is  the main container which contains all data and log files.
 		+ A schema can be thought of as a way to divide a database into groups of objects based on logical relations between 			them. In other words, a schema is a blue print of how data is organized in a database. 
