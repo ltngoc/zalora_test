@@ -3,10 +3,14 @@
 2. SQL
 	
 	a. Relationship between database, schema, table and view in SQL	languages in general
+
 		+ A database is  the main container which contains all data and log files.
+
 		+ A schema can be thought of as a way to divide a database into groups of objects based on logical relations between 			them. In other words, a schema is a blue print of how data is organized in a database. 
 			A schema can include several tables and other stuffs of a database such as index, etc.
+
 		+ A table is the basic data storage unit. Data is stored in rows and columns.
+
 		+ A view is the result set of a stored query on the data,  which users of the database can query as a normal table. 			This pre-established query command is kept in the database dictionary.
 	
 	b. However a view is different from and more advantageous than a table in the following ways:
