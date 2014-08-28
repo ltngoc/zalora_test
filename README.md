@@ -24,6 +24,7 @@ Both script files (`script1.sh` and `script2.sh`) for a) and b) can be found in 
 			`10.11.12.13:5439:zalora:helloDB:world`
 
 To run script1.sh as a cron job every day at 2.35am create a crontab file with the line:
+
 `35 02 * * * bash script1.sh`
 
 
