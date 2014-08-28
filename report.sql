@@ -8,6 +8,7 @@ FROM (SELECT Item_Codes AS Item_Codes, Visits AS Visits, LEFT(Date, 4) AS Year
 FROM reporting.items)
 GROUP BY Item_Codes, Year;
 
+-- the following code is for DBA question in PostgreSQL
 -- grant access to account "buying"
 GRANT USAGE ON ALL TABLES IN SCHEMA sales TO buying;
 -- grant all privileges to account "buying"
