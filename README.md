@@ -16,7 +16,7 @@
 	4. See `report.sql`
 3.  Bash scripting
 
-	Both script files (`script1.sh` and `script2.sh`) for task i) and ii) can be found in the same folder. Below is just 		answer for questions on _PostgreSQL DB_ and _cron_ job. Moreover, folder `bash` now contains output for task ii).
+	Both script files (`script1.sh` and `script2.sh`) for task a) and b) can be found in the same folder. Below is just 		answer for questions on _PostgreSQL DB_ and _cron_ job. Moreover, folder `bash` now contains output for task ii).
 
 	1. 	To connect to PostgreSQL DB, we can first create a password/config file `.pgpass.conf` which contains the line 				`hostname:port:database:username:password`, which in our case should be `10.11.12.13:5439:zalora:helloDB:world`.
 			To run `script1.sh` as a cron job every day at 2.35am create a _crontab_ file with the line: `35 02 * * * bash 					script1.sh`
