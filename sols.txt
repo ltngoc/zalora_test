@@ -10,31 +10,13 @@ b) However a view is different from and more advantageous than a table in the fo
 	+ views can act as aggregated tables
 	+ views take very little space to store since the database contains only the definition of a view, not a copy of all the data that it presents
 
-c) See report.sql
-
-d) 
-
-
+c) and d) See report.sql
 
 
 3)  Bash scripting
-The scripts below can be found in files script1.sh and script2.sh in the same folder.
+Both script files (script1.sh and script2.sh) for a) and b) can be found in the same folder. Below is just answer for questions on PostgreSQL DB and cron job
 
-a) script1.sh
-#!/bin/bash
-HOST='10.11.12.13'
-USER='helloFTP'
-PASSWD='world' 
-
-ftp $HOST << EOT
-user $USER $PASSWD
-mget webtrekk_marketing* home/Marketing Report/Data/
-cd home/Marketing Report/Scripts/
-python ZMR.py
-cd home/Marketing Report/Scripts/
-psql
-
-
+a) 
 To connect to PostgreSQL DB, we can first create a password/config file like .pgpass.conf which contains the line
 hostname:port:database:username:password
 which in our case should be
@@ -42,16 +24,6 @@ which in our case should be
 
 To run script1.sh as a cron job every day at 2.35am create a crontab file with the line:
 35 02 * * * bash script1.sh
-
-b) script2.sh
-#!/bin/bash
-cd /programming-tasks/bash/
-find -type f -name 'zalora-*' | xargs rename 's/zalora/Zalora/'
-for fname in Zalora-* 
-do
-cat $fname | tr [a-z] [A-Z] > $fname
-cat $fname | sed 's/\.//' > $fname
-done;
 
 
 
