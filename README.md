@@ -14,13 +14,13 @@
 	
 	b. However a view is different from and more advantageous than a table in the following ways:
 
-		+ a view can be a subset of an underlying table. Thus, it helps to limit the exposure of the underlying table to outer world. For example, a given user may be permitted to query the view, while denied access to the rest of the base table.
+		+ A view can be a subset of an underlying table. Thus, it helps to limit the exposure of the underlying table to outer world. For example, a given user may be permitted to query the view, while denied access to the rest of the base table.
 		
-		+ a view can join and simplify multiple tables into a single virtual table.
+		+ A view can join and simplify multiple tables into a single virtual table.
 		
-		+ a view can act as an aggregated table
+		+ A view can act as an aggregated table
 		
-		+ a view takes very little space to store since the database contains only the definition of a view, not a copy of all the data that it presents
+		+ A view takes very little space to store since the database contains only the definition of a view, not a copy of all the data that it presents
 		
 	I just list  above major benefits of views. There are still other minor benefits. 
 		
